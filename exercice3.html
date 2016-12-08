@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<input type="radio" name="radio1" id="radio1" checked> Semaine <br>
+	<input type="radio" name="radio1"> Week-end <br>
+	<input type="button" value="Choix" id="btn1"> <br>
+	<input type="text" id="resultat">
+</form>
+</body>
+</html>
+
+
+<script>
+	// function Affiche() {
+	// 	console.log("Ca marche ");
+	// }
+
+	// var btn1 = document.getElementById("btn1");
+	// btn1.addEventListener("click", Affiche);
+	
+	var btn1 = document.getElementById("btn1");
+	btn1.addEventListener("click", function () {
+		if (document.getElementById("radio1").checked == true) {
+			document.getElementById("resultat").value = "Semaine";
+		}
+		else {
+			document.getElementById("resultat").value = "Week-End";
+		}
+	});
+</script>

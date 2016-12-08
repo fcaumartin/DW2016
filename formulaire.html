@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form action="http://serveur/script.php" method="POST">
+	
+
+	<input type="text" name="nom" required placeholder="Entrez votre nom"><br>
+	Prénom <input type="text" name="prenom" required><br>
+	Date de naissance <input type="date" name="date" required><br>
+	CP <input type="text" name="cp" pattern="^[0-9]{5}$"><br>
+	Email <input type="email" name="email" required><br>
+	Phone <input type="phone" name="phone"><br>
+	<input type="submit" value="Valider">
+</form>
+
+
+</body>
+</html>

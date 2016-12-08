@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#postit {
+			position: absolute;
+			top: 40px;
+			left: 300px;
+			width: 250px;
+			height: 100px;
+			background-color: #F9F470;
+			display: none;
+			/*visibility: hidden;*/
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" id="btn1">
+	<input type="text" id="text1">
+	<div id="postit"></div>
+</body>
+</html>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script >
+	$("#btn1").click(function () {
+		// $("#postit").fadeToggle(5000);
+		$("#postit").slideToggle();
+		$("#postit").html("toto");
+	});
+
+	$("#text1").change(function() {
+		$("#postit").html($("#text1").val());
+	});
+
+</script>
+
