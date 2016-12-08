@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input id="nom" type="text" name="nom">
+		<input id="prenom" type="text" name="prenom">
+		<input 
+			type="button" 
+			value="Clique moi !!!"
+			id="button1"
+		>
+	</form>
+	<div id="resultat"></div>
+</body>
+</html>
+
+<script>
+	var button1 = document.getElementById("button1");
+
+	button1.addEventListener("click", affiche_message);
+
+
+	function affiche_message() {
+		document.getElementById('resultat').innerHTML = 'Bonjour ' + document.getElementById('nom').value + ' ' + document.getElementById('prenom').value;document.getElementById('resultat').style = 'background-color: blue; color: white';
+	}
+</script>

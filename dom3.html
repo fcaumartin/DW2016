@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input id="nom" type="text" name="nom">
+		<input id="prenom" type="text" name="prenom">
+		<input 
+			type="button" 
+			value="Clique moi !!!"
+			onclick="document.getElementById('resultat').innerHTML = 'Bonjour ' + document.getElementById('nom').value + ' ' + document.getElementById('prenom').value;document.getElementById('resultat').style = 'background-color: blue; color: white';" 
+		>
+	</form>
+	<div id="resultat"></div>
+</body>
+</html>
