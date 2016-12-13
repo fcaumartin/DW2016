@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<form>
+		<input id="nom" type="text" name="nom">
+		<input id="prenom" type="text" name="prenom">
+		<input 
+			type="button" 
+			value="Clique moi !!!"
+			id="btn1"
+		>
+	</form>
+	<div id="resultat"></div>
+</body>
+</html>
+
+
+<script>
+	$("#btn1").click(function() {
+		var nom = $("#nom").val();
+		var prenom = $("#prenom").val();
+
+		$("#resultat").html("Bonjour " + nom + " " + prenom);
+	});
+
+
+
+</script>

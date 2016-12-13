@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    
+    <div class="container">
+
+      <div class="row">
+        
+        <button type="button" class="btn btn-primary btn-lg" id="btn1">
+
+      </div>
+    </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="monmodal1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Mon joli modal</h4>
+      </div>
+      <div class="modal-body">
+        <p>Bonjour !!!</p>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  </body>
+</html>
+
+<script>
+$("#btn1").click(function() {
+  $('#monmodal1').modal("show");
+})
+</script>
+	
+	

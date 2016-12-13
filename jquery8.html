@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.1.1.min.js"></script>
+	<style>
+		#resultat {
+			height: 200px;
+			background-color: #55E4CE;
+			color: white;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			width: 200px;
+
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="menu">Menu</div>
+	<div id="resultat">
+		<div>Accueil</div>
+		<div>Contact</div>
+		<div>Presentation</div>
+	</div>
+	
+</body>
+</html>
+
+
+<script>
+	$("#menu").click(function() {
+		$("#resultat").animate({height: 400}, 1500);
+		$("#resultat").animate({left: 400}, 500);
+		$("#resultat").animate({top: 400}, 500);
+	});
+
+	
+
+
+
+</script>

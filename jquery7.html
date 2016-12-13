@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.1.1.min.js"></script>
+	<style>
+		#resultat {
+			height: 200px;
+			background-color: #55E4CE;
+			color: white;
+			display: none;
+			position: absolute;
+
+		}
+		img {
+			width: 200px
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">Menu</div>
+	<div id="resultat">
+		<div>Accueil</div>
+		<div>Contact</div>
+		<div>Presentation</div>
+	</div>
+	<img id="img1" src="logo1.jpg">
+</body>
+</html>
+
+
+<script>
+	$("#img1").mouseover(function() {
+		$("#img1").attr("src", "logo2.jpg");
+	});
+
+	$("#img1").mouseleave(function() {
+		$("#img1").attr("src", "logo1.jpg");
+	});
+
+
+
+</script>
